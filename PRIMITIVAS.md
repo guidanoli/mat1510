@@ -16,7 +16,7 @@ Teorema
 Sejam `U \in C` um domínio, `f : U -> C` uma função contínua,
 `F` uma primitiva de `f` em `U` e `\gamma` uma caminho suave por partes
 em `U` unindo o ponto `z_0` ao ponto `z_1`. Então...
-`\int_\gamma f(z) dz = F(z_0) - F(z_1)`.
+`\int_\gamma f(z) dz = F(z_1) - F(z_0)`.
 
 ### Bônus
 Em particular, se o caminho é fechado então
