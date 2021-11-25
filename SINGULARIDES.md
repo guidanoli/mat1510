@@ -30,3 +30,47 @@ o número `a` é então...
 * uma singularidade removível, se `b_m = 0` para `m >= 1`
 * um polo de ordem `k` se `b_m /= 0` para `m <= k` e `b_m = 0` para `m > k`
 * uma singularidade essencial se `b_m /= 0` para um número infinito de termos `b_m`
+
+Singularidade removível
+-----------------------
+É aquela tal que `b_m = 0` para todo `m >= 1`
+
+Polo de ordem k
+---------------
+É aquele tal que `b_m /= 0` para `m <= k` e `b_m = 0` para todo `m > k`
+
+Singularidade essencial
+-----------------------
+É aquela tal que `b_m /= 0` para um número infinito de termos `b_m`
+
+Teorema
+-------
+Seja `f` uma função holomorfa no anel `A(a,0,\rho)`. Então as seguintes afirmações são equivalentes.
+1. `a` é singularidade removível de `f`
+2. existe o `lim_{z \to a} f(z)`
+3. `|f|` é limitado em algum anel `A(a,0,\delta) \in A(a,0,\rho)`
+
+Colorário
+---------
+Se `b_m /= 0` para algum `m >= 1`, então `|f|` é ilimitado em qualquer disco de centro em `a`.
+
+Teorema
+-------
+Se `f` é uma função holomorfa no anel `A(a,0,\rho)` então `a` é um polo de ordem `k` de `f`,
+se e somente se, `lim_{z \to a} [(z-a)^k * f(z)]` existe e é um número complexo não-nulo.
+
+Colorário
+---------
+Se `f` é uma função holomorfa no anel `A(a,0,\rho)` e `a` é polo de ordem `k` de `f`,
+então `lim_{z \to a} |f(z)| = \infty`.
+
+Teorema de Picard
+-----------------
+Se `a` é uma singularidade essencial de `f` holomorfa em `A(a,0,\delta)` dado `0 < r < \delta`,
+a imagem do disco `A(a,0,r)` em `f` cobrirá todo o plano `C` exceto no máximo um ponto.
+
+Teorema de Casorati-Weierstrass
+-------------------------------
+Seja `f` uma função holomorfa no anel `A(a,0,\rho)` e suponha que `a` é singularidade essencial de `f`.
+Então dados `0 < r < \rho`, `\epsilon > 0` e `\alpha \in C`, existe um número complexo `\beta` tal que
+`\beta \in A(a,0,r)` e `|f(\beta) - \alpha| < \epsilon`.
